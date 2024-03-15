@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'ebold';
+    src: url(/src/fonts/Qanelas-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url(/src/fonts/Qanelas-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'reg';
+    src: url(/src/fonts/Qanelas-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'black';
+    src: url(/src/fonts/Qanelas-Black.ttf);
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #1E2538;
+}
+
+.content {
+    min-height: calc(100vh - 70px - 64px);
+}
+
+.movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+}
+
+label:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.main-color {
+    background-color: #141925;
+}
+
+nav {
+    box-shadow: none;
+}
+
+footer {
+    text-align: center;
+}
+
+.logo-block {
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    justify-content: space-between;
+    font-family: 'ebold';
+    font-size: 24px;
+}
+
+.nav-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colorize {
+    color: #3657CB;
+}
+
+.login-btn {
+    padding: 16px 24px;
+    font-family: 'bold';
+    color: #FFFFFF;
+    background-color: #3657CB;
+    border: none;
+    border-radius: 10px;
+}
+
+.input-field {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.row .col {
+    padding: 0px;
+}
+
+.card .card-content {
+    padding: 0;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #1E2538;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name-film {
+    font-family: 'bold';
+    font-size: 18px;
+    color: white;
+}
+
+.card .card-content .name-film {
+    margin-top: 12px;
+}
+
+.type-text {
+    color: #F2F60F;
+}
+
+.footer-copyright {
+    font-family: 'reg';
+}
+
+.card .card-image {
+    border-radius: 10px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-family: 'black';
+    margin: 0;
+    font-size: 4.2rem;
+}
+
+.top-main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    gap: 12px;
+}
+
+.row {
+    margin-top: 60px;
+}
+
+.filter-text {
+    font-family: 'bold';
+    color: #FFFFFF;
+}
+
+.input-field input[type=search] {
+    padding: 0px 0px 0px 10px;
+    border: none;
+    margin: 0;
+}
+
+input {
+    font-family: 'reg';
+    color: #FFFFFF;
+}
+
+input:focus {
+    background-color: transparent;
+}
+
+.input-field {
+    background-color: none;
+    border-bottom: 1px #e3e3e3 solid;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.input-field {
+    margin-top: 0;
+}
+
+.animated-image {
+    transition: all ease-in-out .4s;
+}
+
+.card:hover .animated-image{
+    transform: scale(1.08) rotate(2deg);
+    transition: all ease-in-out .4s;
+}
+
+.not-found-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/5;
+}
+
+.not-found-text {
+    color: white;
+}
+
+.animated-logo {
+    width: 100px;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
